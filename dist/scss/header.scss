@@ -1,0 +1,19 @@
+.header__city-btn,
+.header__delivery,
+.header__search__btn {
+  border: none;
+  background: none;
+}
+
+.header__logo-link:hover {
+  text-decoration: none;
+}
+
+.header__enter {
+  color: $black;
+  text-decoration: none;
+  &:hover {
+    color: $black;
+    text-decoration: none;
+  }
+}
