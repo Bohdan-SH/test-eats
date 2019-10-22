@@ -11,144 +11,143 @@
   <script src="./js/main.js" defer></script>
 </head>
 <body>
-  <header class="header container">
-    <div class="container">
-      <div class="row">
+  <header class="header container-fluid">
+    <div class="header__wrapper container">
+      <div class="header__block row">
         <a class="header__logo-link img-fluid" href="#">
           <img class="header__logo" src="./img/header-logo.svg" alt="logo">
         </a>
-        <button class="header__city-btn">
-        <svg width="24px" height="24px" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="m12.0001 2.83398c2 0 4.0833.75 5.5833 2.33334 3.0833 3.08333 3.0833 8.16668 0 11.16668l-5.5833 5.6667-5.58335-5.5834c-3.08334-3.0833-3.08334-8.16665 0-11.24998 1.5-1.58334 3.58335-2.33334 5.58335-2.33334zm0 15.66672 3.8333-3.8334c2.0833-2.1666 2.0833-5.58332 0-7.74998-1-1-2.4167-1.58334-3.8333-1.58334-1.4167 0-2.83335.58334-3.83335 1.58334-2.08334 2.16666-2.08334 5.58338 0 7.74998zm1.6666-7.75c0 .9204-.7462 1.6666-1.6666 1.6666-.9205 0-1.6667-.7462-1.6667-1.6666 0-.92052.7462-1.66672 1.6667-1.66672.9204 0 1.6666.7462 1.6666 1.66672z" fill-rule="evenodd" clip-rule="evenodd" fill="#1F1F1F"></path>
-        </svg>
-        <span>Київ</span>
-        </button>
-        <button class="header__delivery">
+        <div class="header__delivery-block">
+          <button class="header__city-btn">
           <svg width="24px" height="24px" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path clip-rule="evenodd" d="m2.83325 12.0007c0-5.08338 4.08334-9.16672 9.16665-9.16672 5.0834 0 9.1667 4.08334 9.1667 9.16672 0 5.0833-4.0833 9.1666-9.1667 9.1666-5.08331 0-9.16665-4.0833-9.16665-9.1666zm2.5 0c0 3.6666 3 6.6666 6.66665 6.6666 3.6667 0 6.6667-3 6.6667-6.6666 0-3.66672-3-6.66672-6.6667-6.66672-3.66665 0-6.66665 3-6.66665 6.66672zm5.41665 2.0833v-6.25002h2.5v3.75002h2.9167v2.5z" fill="#1F1F1F" fill-rule="evenodd"></path>
+            <path d="m12.0001 2.83398c2 0 4.0833.75 5.5833 2.33334 3.0833 3.08333 3.0833 8.16668 0 11.16668l-5.5833 5.6667-5.58335-5.5834c-3.08334-3.0833-3.08334-8.16665 0-11.24998 1.5-1.58334 3.58335-2.33334 5.58335-2.33334zm0 15.66672 3.8333-3.8334c2.0833-2.1666 2.0833-5.58332 0-7.74998-1-1-2.4167-1.58334-3.8333-1.58334-1.4167 0-2.83335.58334-3.83335 1.58334-2.08334 2.16666-2.08334 5.58338 0 7.74998zm1.6666-7.75c0 .9204-.7462 1.6666-1.6666 1.6666-.9205 0-1.6667-.7462-1.6667-1.6666 0-.92052.7462-1.66672 1.6667-1.66672.9204 0 1.6666.7462 1.6666 1.66672z" fill-rule="evenodd" clip-rule="evenodd" fill="#1F1F1F"></path>
           </svg>
-          <span>Доставка зараз</span>
-        </button>
-        <button class="header__search__btn">
+          <span>Київ</span>
+          </button>
+          <button class="header__delivery">
             <svg width="24px" height="24px" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="m20.8333 19-3.6666-3.6667c.9167-1.3333 1.4999-2.9166 1.4999-4.6666 0-4.33334-3.5833-7.9167-7.9167-7.9167-4.33331 0-7.91665 3.58336-7.91665 7.9167 0 4.3333 3.58334 7.9167 7.91665 7.9167 1.75 0 3.3334-.5834 4.6668-1.5001l3.6666 3.6667zm-15.50005-8.25c0-2.99999 2.41667-5.41666 5.41665-5.41666 3 0 5.4167 2.41667 5.4167 5.41666 0 3-2.4167 5.4167-5.4167 5.4167-2.99998 0-5.41665-2.4167-5.41665-5.4167z" fill="#1F1F1F"></path>
+              <path clip-rule="evenodd" d="m2.83325 12.0007c0-5.08338 4.08334-9.16672 9.16665-9.16672 5.0834 0 9.1667 4.08334 9.1667 9.16672 0 5.0833-4.0833 9.1666-9.1667 9.1666-5.08331 0-9.16665-4.0833-9.16665-9.1666zm2.5 0c0 3.6666 3 6.6666 6.66665 6.6666 3.6667 0 6.6667-3 6.6667-6.6666 0-3.66672-3-6.66672-6.6667-6.66672-3.66665 0-6.66665 3-6.66665 6.66672zm5.41665 2.0833v-6.25002h2.5v3.75002h2.9167v2.5z" fill="#1F1F1F" fill-rule="evenodd"></path>
             </svg>
-          <span>Пошук</span>
-        </button>
-        <a class="header__enter" href="#">Увійти</a>
+            <span>Доставка зараз</span>
+          </button>
+        </div>
+        <div class="header__search-block ml-md-auto">
+          <button class="header__search-btn">
+              <svg width="24px" height="24px" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="m20.8333 19-3.6666-3.6667c.9167-1.3333 1.4999-2.9166 1.4999-4.6666 0-4.33334-3.5833-7.9167-7.9167-7.9167-4.33331 0-7.91665 3.58336-7.91665 7.9167 0 4.3333 3.58334 7.9167 7.91665 7.9167 1.75 0 3.3334-.5834 4.6668-1.5001l3.6666 3.6667zm-15.50005-8.25c0-2.99999 2.41667-5.41666 5.41665-5.41666 3 0 5.4167 2.41667 5.4167 5.41666 0 3-2.4167 5.4167-5.4167 5.4167-2.99998 0-5.41665-2.4167-5.41665-5.4167z" fill="#1F1F1F"></path>
+              </svg>
+            <span>Пошук</span>
+          </button>
+          <a class="header__enter" href="#">Увійти</a>
+        </div>
       </div>
     </div>
   </header>
-  <main class="content">
-    <div class="container">
-      <h1 class="content__caption">Restaurants</h1>
-      <section class="content__products row justify-content-lg-between justify-content-center m-auto">
-        <artcile class="content__card w-sm-100">
-          <img class="d-flex img-fluid" src="./img/example.png" alt="" class="content__img">
-          <h2 class="content__name">restaraunt name</h2>
-          <p>₴ • Китайська • Азіатська</p>
-          <p>25 - 35 Min</p>
-        </artcile>
-        <artcile class="content__card">
-          <img class="img-fluid" src="./img/example.png" alt="" class="content__img">
-          <h2 class="content__name">restaraunt name</h2>
-          <p>₴ • Китайська • Азіатська</p>
-          <p>25 - 35 Min</p>
-        </artcile>
-        <artcile class="content__card">
-          <img class="img-fluid" src="./img/example.png" alt="" class="content__img">
-          <h2 class="content__name">restaraunt name</h2>
-          <p>₴ • Китайська • Азіатська</p>
-          <p>25 - 35 Min</p>
-        </artcile>
-        <artcile class="content__card">
-          <img class="img-fluid" src="./img/example.png" alt="" class="content__img">
-          <h2 class="content__name">restaraunt name</h2>
-          <p>₴ • Китайська • Азіатська</p>
-          <p>25 - 35 Min</p>
-        </artcile>
-        <artcile class="content__card">
-          <img class="img-fluid" src="./img/example.png" alt="" class="content__img">
-          <h2 class="content__name">restaraunt name</h2>
-          <p>₴ • Китайська • Азіатська</p>
-          <p>25 - 35 Min</p>
-        </artcile>
-        <artcile class="content__card">
-          <img class="img-fluid" src="./img/example.png" alt="" class="content__img">
-          <h2 class="content__name">restaraunt name</h2>
-          <p>₴ • Китайська • Азіатська</p>
-          <p>25 - 35 Min</p>
-        </artcile>
-        <artcile class="content__card">
-          <img class="img-fluid" src="./img/example.png" alt="" class="content__img">
-          <h2 class="content__name">restaraunt name</h2>
-          <p>₴ • Китайська • Азіатська</p>
-          <p>25 - 35 Min</p>
-        </artcile>
-        <artcile class="content__card">
-          <img class="img-fluid" src="./img/example.png" alt="" class="content__img">
-          <h2 class="content__name">restaraunt name</h2>
-          <p>₴ • Китайська • Азіатська</p>
-          <p>25 - 35 Min</p>
-        </artcile>
-        <artcile class="content__card">
-          <img class="img-fluid" src="./img/example.png" alt="" class="content__img">
-          <h2 class="content__name">restaraunt name</h2>
-          <p>₴ • Китайська • Азіатська</p>
-          <p>25 - 35 Min</p>
-        </artcile>
-      </section>
-    </div>
+  <main class="content container">
+    <h1 class="content__caption">Restaurants</h1>
+    <section class="products">
+      <article class="products__card">
+        <img class="products__img" src="./img/example.png" alt="">
+        <h3 class="products__name">Макдоналдс</h3>
+        <p class="products__description">₴₴ • Бургеры</p>
+        <p class="products__time">25 - 35 Min</p>
+      </article>
+      <article class="products__card">
+        <img class="products__img" src="./img/example.png" alt="">
+        <h3 class="products__name">Макдоналдс</h3>
+        <p class="products__description">₴₴ • Бургеры</p>
+        <p class="products__time">25 - 35 Min</p>
+      </article>
+      <article class="products__card">
+        <img class="products__img" src="./img/example.png" alt="">
+        <h3 class="products__name">Макдоналдс</h3>
+        <p class="products__description">₴₴ • Бургеры</p>
+        <p class="products__time">25 - 35 Min</p>
+      </article>
+      <article class="products__card">
+        <img class="products__img" src="./img/example.png" alt="">
+        <h3 class="products__name">Макдоналдс</h3>
+        <p class="products__description">₴₴ • Бургеры</p>
+        <p class="products__time">25 - 35 Min</p>
+      </article>
+      <article class="products__card">
+        <img class="products__img" src="./img/example.png" alt="">
+        <h3 class="products__name">Макдоналдс</h3>
+        <p class="products__description">₴₴ • Бургеры</p>
+        <p class="products__time">25 - 35 Min</p>
+      </article>
+      <article class="products__card">
+        <img class="products__img" src="./img/example.png" alt="">
+        <h3 class="products__name">Макдоналдс</h3>
+        <p class="products__description">₴₴ • Бургеры</p>
+        <p class="products__time">25 - 35 Min</p>
+      </article>
+    </section>
   </main>
   <footer class="footer container-fluid">
-    <div class="footer__main-block row container m-auto">
-      <div class="footer__app-block column">
-        <img class="footer__logo img-fluid" src="./img/footer-logo.svg" alt="logo">
-        <div class="row container w-10">
-          <img class="footer__app img-fluid" src="./img/appstore.svg" alt="appstore">
-          <img class="footer__app img-fluid" src="./img/playmarket.png" alt="playmarket">
-        </div>
-      </div>
-      <ul class="footer__list">
-        <li class="footer__item">
-          <a href="#" class="footer__link">Про Uber Eats</a>
-        </li>
-        <li class="footer__item">
-          <a href="#" class="footer__link">Читати наш блог</a>
-        </li>
-        <li class="footer__item">
-          <a href="#" class="footer__link">Зареєструватися як кур'єр</a>
-        </li>
-        <li class="footer__item">
-          <a href="#" class="footer__link">Додати ваш ресторан</a>
-        </li>
-      </ul>
-      <ul class="footer__list">
-        <li class="footer__item">
-          <a href="#" class="footer__link">Допомога</a>
-        </li>
-        <li class="footer__item">
-          <a href="#" class="footer__link">Читати поширені запитання</a>
-        </li>
-        <li class="footer__item">
-          <a href="#" class="footer__link">Переглянути всі міста</a>
-        </li>
-        <li class="footer__item">
-          <a href="#" class="footer__link">Ресторан поблизу</a>
-        </li>
-        <li class="footer__item">
-          <a href="#" class="footer__link">українська мова</a>
-        </li>
-      </ul>
-    </div>
     <div class="container">
-      <div class="footer__line"></div>
-      <div class="row m-auto">
-        <span class="footer__link col-6 p-0">© 2019 Uber Technologies Inc.</span>
-        <a class="footer__link" href="#">Умови використання</a>
-        <a class="footer__link" href="#">Політика конфіденційності</a>
-        <a class="footer__link" href="#">Ціни</a>
+      <div class="footer__main-block row">
+        <div class="footer__app-block column">
+          <img class="footer__logo img-fluid" src="./img/footer-logo.svg" alt="logo">
+          <div class="row container w-10">
+            <a href="#">
+              <img class="footer__app" src="./img/appstore.svg" alt="appstore">
+            </a>
+            <a href="#">
+              <img class="footer__app" src="./img/playmarket.png" alt="playmarket">
+            </a>
+          </div>
+        </div>
+        <ul class="footer__list first-list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">Про Uber Eats</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Читати наш блог</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Зареєструватися як кур'єр</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Додати ваш ресторан</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">Допомога</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Читати поширені запитання</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Переглянути всі міста</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Ресторан поблизу</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">українська мова</a>
+          </li>
+        </ul>
       </div>
+      <div class="footer__line"></div>
+      <div class="footer__policy row">
+        <span class="footer__link annotation col-6 p-0">© 2019 Uber Technologies Inc.</span>
+        <a class="footer__link policy" href="#">Умови використання</a>
+        <a class="footer__link policy" href="#">Політика конфіденційності</a>
+        <a class="footer__link policy" href="#">Ціни</a>
+      </div>
+    </div>
+    <div class="footer__social-block">
+      <a class="footer__social-link" href="#">
+        <img class="footer__social-img" src="./img/face.svg" alt="facebook">
+      </a>
+      <a class="footer__social-link" href="#">
+        <img class="footer__social-img" src="./img/twitter.svg" alt="facebook">
+      </a>
+      <a class="footer__social-link" href="#">
+        <img class="footer__social-img" src="./img/insta.svg" alt="facebook">
+      </a>
     </div>
   </footer>
 </body>

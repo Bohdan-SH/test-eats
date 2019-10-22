@@ -1,5 +1,6 @@
 .footer {
   background-color: $black;
+  padding: 88px;
 }
 
 .footer__main-block {
@@ -15,7 +16,7 @@
 }
 
 .footer__app {
-  width: 25%;
+  width: 130px;
   &:first-child {
     margin-right: 20px;
   }
@@ -34,6 +35,10 @@
   margin-bottom: 15px;
 }
 
+.footer__social-block {
+  text-align: center;
+}
+
 .footer__link {
   color: $white;
   text-decoration: none;
@@ -45,4 +50,30 @@
 .footer__line {
   background-color: $white;
   height: 1px;
+  margin-bottom: 20px;
+}
+
+.footer__policy {
+  margin-bottom: 40px;
+}
+
+.footer__social-link {
+  text-align: center;
+  margin-right: 20px;
+}
+
+.footer__social-link {
+  display: inline-block;
+  width: 17px;
+  &:hover {
+  text-decoration: none;
+  }
+}
+
+.first-list {
+  margin-right: 30px;
+}
+
+.policy {
+  margin-right: 15px;
 }
