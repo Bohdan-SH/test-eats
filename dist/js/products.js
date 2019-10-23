@@ -14,8 +14,8 @@ export default class Products {
       <article class="products__card" id="${item.id}">
         <img alt="${item.name}" image-helper="${item.image}" data-image-size="-400x0" data-base-url="https://misteram.com.ua/" src="https://assets.misteram.com.ua/misteram-public/${item.image}-400x0.png">
         <h3 class="products__name">${item.name}</h3>
-        <p class="products__description">${item.surchargeInterval}</p>
-        <p class="products__time">${item.description}</p>
+        <p class="products__time">${item.deliveryPriceByActionWorkingTimeStart} - ${item.deliveryPriceByActionWorkingTimeEnd}</p>
+        <p class="products__description">доставка від - ${item.deliveryPrice}грн.</p>
       </article>
     `).join('')}`;
     } catch(err) {
