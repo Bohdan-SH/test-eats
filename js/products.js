@@ -10,6 +10,7 @@ export default class Products {
     try {
       let res = await fetch(apiCompanyUrl);
       let companies = await res.json();
+      console.log(companies[0].image);
       this.element.innerHTML = `${companies.map(item => `
       <article class="products__card" id="${item.id}">
         <img class="products__img" src="${item.image}" alt="">
