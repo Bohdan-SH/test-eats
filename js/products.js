@@ -12,7 +12,7 @@ export default class Products {
       let companies = await res.json();
       this.element.innerHTML = `${companies.map(item => `
       <article class="products__card" id="${item.id}">
-        <img class="products__img" src="./img/example.png" alt="">
+        <img class="products__img" src="${item.image}" alt="">
         <h3 class="products__name">${item.name}</h3>
         <p class="products__description">${item.surchargeInterval}</p>
         <p class="products__time">${item.description}</p>
