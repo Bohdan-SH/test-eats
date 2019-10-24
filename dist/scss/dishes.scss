@@ -1,0 +1,22 @@
+.dishes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+}
+
+.dishes__card {
+  margin-right: 10px;
+}
+
+.dishes__img-block {
+  display: flex;
+  justify-content: center;
+}
+
+.dishes__img {
+  width: 100%;
+}
+
+.dishes__name {
+  font-size: 1.2rem;
+}

@@ -2,6 +2,10 @@
   .products__card {
     width: 30%;
   }
+
+  .dishes__card {
+    width: 32%;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -56,7 +60,9 @@
   }
 
   .products__img,
-  .products__card {
+  .products__card,
+  .dishes__card,
+  .dishes__card-img {
     width: 100%;
   }
 
@@ -94,10 +100,16 @@
 }
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
+  .dishes__card,
   .products__card {
     width: 49%;
   }
 
+  .dishes__card {
+    margin-right: 5px;
+  }
+
+  .dishes__img,
   .products__img {
     width: 100%;
   }
