@@ -11,7 +11,6 @@ class Products {
       let res = await fetch(apiCompanyUrl);
       let companies = await res.json();
       this.element.innerHTML = `${companies.map(item => `
-      
         <article class="products__card" id="${item.id}" data-element="product-card">
         <a href="menu.html">
           <div class="products__img-block">
