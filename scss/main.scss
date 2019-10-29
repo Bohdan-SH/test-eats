@@ -5,13 +5,18 @@
 }
 
 .products__img-block {
+  display: flex;
+  justify-content: center;
   overflow: hidden;
   border-radius: 15px;
+  border: 1px solid $gray;
 }
 
-.products__img:hover {
-  transform: scale(1.1);
-  transition-duration: 1s;
+.products__img {
+  &:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
+  }
 }
 
 .products__name {
