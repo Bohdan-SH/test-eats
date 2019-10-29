@@ -3,7 +3,6 @@ import api from './api.js';
 class Menu {
   constructor({ element }) {
     this.element = element;
-    this.lazy();
     this.render();
   }
 
