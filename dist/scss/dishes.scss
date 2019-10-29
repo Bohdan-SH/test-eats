@@ -4,15 +4,28 @@
   justify-content: start;
 }
 
-.dishes__card {
-  margin-right: 10px;
+.main {
+  background: linear-gradient($white, $white 0%, $gray);
+  padding-bottom: 50px;
 }
 
-.dishes__img-block {
+.dishes__card {
+  margin-right: 14.8px;
+  margin-bottom: 20px;
+  background-color: $white;
+  border-radius: 5px;
+  &:hover {
+    box-shadow: 0px 0px 15px $dark-gray;
+  }
+}
+
+.dishes__wrapper {
+  padding: 15px;
+}
+
+.dishes__price-block {
   display: flex;
-  justify-content: center;
-  overflow: hidden;
-  border-radius: 15px;
+  justify-content: space-between;
 }
 
 .dishes__name {
@@ -21,10 +34,18 @@
   color: $black;
 }
 
+.dishes__price {
+  font-weight: bold;
+  color: $black;
+  margin-left: 10px;
+}
+
+.dishes__weight,
+.dishes__description {
+  color: $dark-gray;
+}
+
 .dishes__img {
   width: 100%;
-  &:hover {
-    transform: scale(1.1);
-    transition-duration: 1s;
-  }
+  border-radius: 5px;
 }
