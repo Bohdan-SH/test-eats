@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.css">
   <script src="./js/main.js" defer type="module"></script>
-  <script src="./js/lazy.js" defer></script>
 </head>
 <body>
   <header class="header container-fluid">
@@ -46,65 +45,7 @@
   </header>
   <main class="content container">
     <h1 class="content__caption">Restaurants</h1>
-    <section class="products">
-      <!-- <article class="products__card" id="${item.id}" data-element="product-card">
-        <a href="menu.html">
-          <div class="products__img-block">
-            <img class="products__img b-lazy" alt="${item.name}" image-helper="${item.image}" data-image-size="-400x0" data-base-url="https://misteram.com.ua/" src="https://dummyimage.com/366x259/9c9c9c/9c9c9c.png" data-src="./img/example.png">
-          </div>
-        </a> 
-        <h3 class="products__name">Три утки</h3>
-        <div class="products__description row container">
-          <div class="products__rate-block">
-            <img class="products__star" src="./img/star.svg" alt="">
-            <span>3.3</span>
-          </div>
-          <div>
-            <img src="./img/package.svg" alt="">
-            <span>замовлення від - 0.33грн.</span>
-          </div>
-        </div>
-        <p class="products__time">години доставки 7:20 - 7:25</p>
-      </article>
-      <article class="products__card" id="${item.id}" data-element="product-card">
-        <a href="menu.html">
-          <div class="products__img-block">
-            <img class="products__img b-lazy" alt="${item.name}" image-helper="${item.image}" data-image-size="-400x0" data-base-url="https://misteram.com.ua/" src="https://dummyimage.com/366x259/9c9c9c/9c9c9c.png" data-src="./img/mac.png">
-          </div>
-        </a> 
-        <h3 class="products__name">Mak</h3>
-        <div class="products__description row container">
-          <div class="products__rate-block">
-            <img class="products__star" src="./img/star.svg" alt="">
-            <span>3.3</span>
-          </div>
-          <div>
-            <img src="./img/package.svg" alt="">
-            <span>замавлення від - 0.33грн.</span>
-          </div>
-        </div>
-        <p class="products__time">години доставки 7:20 - 7:25</p>
-      </article>
-      <article class="products__card" id="${item.id}" data-element="product-card">
-        <a href="menu.html">
-          <div class="products__img-block">
-            <img class="products__img b-lazy" alt="${item.name}" image-helper="${item.image}" data-image-size="-400x0" data-base-url="https://misteram.com.ua/" src="https://dummyimage.com/366x259/9c9c9c/9c9c9c.png" data-src="./img/milk.png">
-          </div>
-        </a> 
-        <h3 class="products__name">Mak</h3>
-        <div class="products__description row container">
-          <div class="products__rate-block">
-            <img class="products__star" src="./img/star.svg" alt="">
-            <span>3.3</span>
-          </div>
-          <div>
-            <img src="./img/package.svg" alt="">
-            <span>замавлення від - 0.33грн.</span>
-          </div>
-        </div>
-        <p class="products__time">години доставки 7:20 - 7:25</p>
-      </article> -->
-    </section>
+    <section class="products" data-products></section>
   </main>
   <footer class="footer container-fluid">
     <div class="container">
