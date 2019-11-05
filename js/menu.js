@@ -1,5 +1,5 @@
 import api from './api.js';
-import getQueryVariable from './getQuery.js';
+import getQueryVariable from './getQueryVariable.js';
 
 class Menu {
   constructor({ element, id }) {
@@ -21,7 +21,7 @@ class Menu {
             </div>
             <span class="dishes__price">${item.price}грн.</span>
           </div>
-          <p class="dishes__description">${item.description}</p>
+          <p class="dishes__description">${item.description ? item.description : ''}</p>
           <img class="dishes__img img-fluid" alt="${item.name}" image-helper="${item.image}" data-image-size="-400x0" data-base-url="https://misteram.com.ua/" src="https://assets.misteram.com.ua/misteram-public/${item.image}-400x0.png">
         </div>
       </article>`));

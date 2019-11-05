@@ -43,6 +43,42 @@
   justify-content: space-between;
 }
 
+.skeleton:empty {
+  height: 366px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#cccccc), to(#cccccc)), -webkit-gradient(linear, left top, left bottom, from(#cccccc), to(#cccccc)), -webkit-gradient(linear, left top, left bottom, from(#cccccc), to(#cccccc)), -webkit-gradient(linear, left top, left bottom, from(#f1f1f1), to(#f1f1f1));
+  background-image: -webkit-linear-gradient(#cccccc, #cccccc), -webkit-linear-gradient(#cccccc, #cccccc), -webkit-linear-gradient(#cccccc, #cccccc), -webkit-linear-gradient(#f1f1f1, #f1f1f1);
+  background-image: linear-gradient(#cccccc, #cccccc), linear-gradient(#cccccc, #cccccc), linear-gradient(#cccccc, #cccccc), linear-gradient(#f1f1f1, #f1f1f1);
+  background-size: 224px 10px, 264px 10px, 100px 20px, 364px 267px;
+  background-position: 0 327px, 0 307px, 0 277px, 0 0;
+  background-repeat: no-repeat;
+  -webkit-animation: bounce 1s infinite;
+  animation: bounce 1s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .products__img-block {
   display: -webkit-box;
   display: flex;
@@ -114,15 +150,12 @@
 }
 
 .dishes__name {
-  font-size: 1.3rem;
-  font-weight: bold;
+  font-size: 1.1rem;
   color: #000;
 }
 
 .dishes__price {
-  font-weight: bold;
   color: #000;
-  margin-left: 10px;
 }
 
 .dishes__weight,
@@ -220,6 +253,7 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .skeleton,
   .products__card {
     width: 33%;
   }
@@ -257,6 +291,26 @@
   }
 }
 
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+  .skeleton {
+    width: 49%;
+  }
+  .skeleton:empty {
+    height: 401px;
+    background-size: 224px 10px, 264px 10px, 100px 20px, 453px 302px;
+    background-position: 0 357px, 0 337px, 0 307px, 0 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .skeleton:empty {
+    height: 330px;
+    width: 336px;
+    background-size: 224px 20px, 264px 39px, 100px 20px, 336px 224px;
+    background-position: 0 300px, 0 255px, 0 230px, 0 0;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .header {
     margin-bottom: 20px;
@@ -284,6 +338,12 @@
   .dishes__card,
   .dishes__card-img {
     width: 100%;
+  }
+  .skeleton:empty {
+    height: 408px;
+    width: 100%;
+    background-size: 224px 20px, 264px 39px, 100px 20px, 765px 339px;
+    background-position: 0 300px, 0 255px, 0 230px, 0 0;
   }
   .footer {
     padding-top: 60px;

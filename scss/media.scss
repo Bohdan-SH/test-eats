@@ -1,4 +1,5 @@
 @media screen and (min-width: 1200px) {
+  .skeleton,
   .products__card {
     width: 33%;
   }
@@ -35,6 +36,26 @@
   }
 }
 
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+  .skeleton {
+    width: 49%;
+    &:empty {
+      height: 401px;
+      background-size: 224px 10px, 264px 10px, 100px 20px, 453px 302px;
+      background-position: 0 357px, 0 337px, 0 307px, 0 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .skeleton:empty {
+      height: 330px;
+      width: 336px;
+      background-size: 224px 20px, 264px 39px, 100px 20px, 336px 224px;
+      background-position: 0 300px, 0 255px, 0 230px, 0 0;
+    }
+  }
+
 @media screen and (max-width: 767px) {
   .header {
     margin-bottom: 20px;
@@ -64,6 +85,13 @@
   .dishes__card,
   .dishes__card-img {
     width: 100%;
+  }
+
+  .skeleton:empty {
+    height: 408px;
+    width: 100%;
+    background-size: 224px 20px, 264px 39px, 100px 20px, 765px 339px;
+    background-position: 0 300px, 0 255px, 0 230px, 0 0;
   }
 
   .footer {
