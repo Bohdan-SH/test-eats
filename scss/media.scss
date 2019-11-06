@@ -1,5 +1,4 @@
 @media screen and (min-width: 1200px) {
-  .skeleton,
   .products__card {
     width: 33%;
   }
@@ -36,26 +35,6 @@
   }
 }
 
-@media screen and (min-width: 991px) and (max-width: 1199px) {
-  .skeleton {
-    width: 49%;
-    &:empty {
-      height: 401px;
-      background-size: 224px 10px, 264px 10px, 100px 20px, 453px 302px;
-      background-position: 0 357px, 0 337px, 0 307px, 0 0;
-    }
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .skeleton:empty {
-      height: 330px;
-      width: 336px;
-      background-size: 224px 20px, 264px 39px, 100px 20px, 336px 224px;
-      background-position: 0 300px, 0 255px, 0 230px, 0 0;
-    }
-  }
-
 @media screen and (max-width: 767px) {
   .header {
     margin-bottom: 20px;
@@ -87,11 +66,16 @@
     width: 100%;
   }
 
-  .skeleton:empty {
-    height: 408px;
+  .skeleton {
     width: 100%;
-    background-size: 224px 20px, 264px 39px, 100px 20px, 765px 339px;
-    background-position: 0 300px, 0 255px, 0 230px, 0 0;
+
+    &-img {
+      background-color:#f1f1f1;
+      width: 100%;
+      height: 339px;
+      margin-bottom: 5px;
+      border-radius: 15px;
+    }
   }
 
   .footer {
@@ -124,6 +108,24 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 996px) {
+  .skeleton {
+    width: 49%;
+    &-img {
+      height: 224px;
+    }
+  }
+}
+
+@media screen and (min-width: 997px) and (max-width: 1199px) {
+  .skeleton {
+    width: 49%;
+    &-img {
+      height: 302px;
+    }
   }
 }
 
